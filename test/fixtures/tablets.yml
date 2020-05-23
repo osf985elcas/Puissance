@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pulgadas: MyString
+  computo: one
+  producto: one
+
+two:
+  pulgadas: MyString
+  computo: two
+  producto: two

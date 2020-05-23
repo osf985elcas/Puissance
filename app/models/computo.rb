@@ -1,0 +1,2 @@
+class Computo < ApplicationRecord
+end

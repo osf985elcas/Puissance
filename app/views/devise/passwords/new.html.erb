@@ -1,0 +1,21 @@
+<div class="text-center">
+  <h2 class="h4 text-gray-900 mb-4">Olvidó su clave?</h2>
+</div>
+
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post , :class => 'user'}) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="form-group row">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" ,class: "form-control form-control-user", placeholder: "Correo"%>
+  </div>
+
+  <hr>
+
+  <div class="form-group row">
+    <%= f.submit "Enviar instrucciones para reinicio de contraseña",class: "btn btn-info btn-user btn-block" %>
+  </div>
+<% end %>
+<hr>
+<div class="text-center">
+  <%= render "devise/shared/links"%>
+</div>
