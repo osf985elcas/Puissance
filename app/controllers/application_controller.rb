@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   layout :layout_by_resource
   private
   def layout_by_resource
-    if devise_controller?
+    if devise_controller? && !user_signed_in?
       "devise"
     else
       "application"
@@ -19,4 +19,5 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_up) { |u| u.permit(:nombres, :apellidos, :direccion, :telefonoFijo, :telefonoMovil, :email, :password)}
     devise_parameter_sanitizer.permit(:account_update) { |u| u.permit(:nombres, :apellidos, :direccion, :telefonoFijo, :telefonoMovil, :email, :password, :current_password)}
   end
+  include ApplicationHelper
 end

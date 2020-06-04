@@ -1,2 +1,0 @@
-class MetodoPago < ApplicationRecord
-end

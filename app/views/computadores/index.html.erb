@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>Computadores de escritorio</title>
+</head>
+<body>
+<h3>Computadores de escritorio</h3>
+<hr>
+<div class="row">
+  <% @computadores.each do |computador| %>
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card  shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col-auto">
+              <img src="<%= computador.producto.imagen%>" width="80" height="90" align="center" hspace="10" vspace="10">
+            </div>
+            <div class="col mr-2">
+              <div class="text-md font-weight-bold text-info text-uppercase mb-1">
+                <%= computador.producto.marca %>
+              </div>
+              <div class="text-xs text-info text-uppercase mb-1 ">
+                <%= computador.producto.linea %>
+              </div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800">
+                <%= computador.producto.precio %>
+              </div>
+              <%= link_to 'Más información', computadore_path(computador), class: "btn btn-info btn-sm text-xs" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</body>
+</html>

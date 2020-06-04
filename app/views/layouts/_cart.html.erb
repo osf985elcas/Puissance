@@ -1,0 +1,5 @@
+<%= link_to carts_path ,:class => 'nav-link dropdown-toggle' do %>
+  <i class="fas fa-shopping-cart fa-fw"> </i>
+  <!-- Counter - Messages -->
+  <span class="badge badge-danger badge-counter"><%= current_order.orden_items.size %></span>
+<% end %>

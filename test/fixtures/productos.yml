@@ -4,10 +4,8 @@ one:
   marca: MyString
   linea: MyString
   precio: 1.5
-  imagen: MyString
 
 two:
   marca: MyString
   linea: MyString
   precio: 1.5
-  imagen: MyString
