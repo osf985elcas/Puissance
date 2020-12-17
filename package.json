@@ -10,7 +10,7 @@
     "bootstrap": "^4.5.0",
     "channels": "^0.0.4",
     "chartkick": "^3.2.0",
-    "datatables.net": "^1.10.21",
+    "datatables.net": "^1.10.22",
     "datatables.net-bs4": "^1.10.21",
     "imports-loader": "^0.8.0",
     "jquery": "^3.5.1",
